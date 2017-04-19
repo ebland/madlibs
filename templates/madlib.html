@@ -4,7 +4,13 @@
   <title>Mad Libs</title>
 </head>
 <body>
-  <h1>THE STORY THUS FAR...</h1>
-  One day, when I was out on a walk, I encountered a/n {{ color }} {{ animal }}.  Its name was {{ name }}, and they was really into {{ activity }}.
+  <h1>A RANDOM ADVENTURE</h1>
+  <p>One day, when I was out on a walk, I encountered a/n {{ color }} {{ animal }}.  Its name was {{ name }}, and they was really into {{ activity }}. I asked if we could go get something to eat together, and they said, "Sure, I love to eat {{ food }}--I know a great restaurant, let's go!"</p>
+  <p>After we finished eating, we decided to go to somewhere else--I said, "Let's go somewhere else now--we could go to these places:
+  {% for place in location %}
+    {{ place }},
+  {% endfor %} sound good? "That sounds fun, I had the same thought!"</p>
+  <p>We had an awesome rest of our day, and now I have an awesome new animal pal!</p>
+  <p>THE END</p>
 </body>
 </html>
