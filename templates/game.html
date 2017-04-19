@@ -4,12 +4,24 @@
   <title>Mad Libs</title>
 </head>
 <body>
-
   <h1>MAD LIBS!</h1>
-
   <!-- color, animal, name, activity -->
-
-  
-
+  <form action='/madlib'>
+    Enter a color:
+    <input type="text" name="color"><br>
+    Enter a type of animal:
+    <input type="text" name="animal"><br>
+    Enter a name:
+    <input type="text" name="name"><br>
+    Choose an activity:
+    <select name="activity">
+      <option value="spelunking">spelunking</option>
+      <option value="snarfblatting">snarfblatting</option>
+      <option value="trainspotting">trainspotting</option>
+      <option value="mudding">mudding</option>
+      <option value="globetrotting">globetrotting</option>
+    </select><br>
+    <input type="submit" value="Tell the story!">
+  </form>
 </body>
 </html>
